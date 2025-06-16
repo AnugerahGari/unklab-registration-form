@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Registration</h1>
+            <p>New Student Registration Form</p>
+        </div>
+
+        <div class="main-content">
+            <div class="side-content">
+                <div class="box-step">
+                    <ul>
+                        <li class="step">
+                            <div class="step-number">01</div>
+                            <div class="step-info">
+                                <div class="step-title">STEP 1</div>
+                                <div class="step-subtitle">Personal Details</div>
+                                <div class="step-status">Completed &#10003;</div>
+                            </div>
+                        </li>
+                        <li class="step">
+                            <div class="step-number">02</div>
+                            <div class="step-info">
+                                <div class="step-title">STEP 2</div>
+                                <div class="step-subtitle">School's Information</div>
+                                <div class="step-status">Completed &#10003;</div>
+                            </div>
+                        </li>
+
+                        <li class="step">
+                            <div class="step-number">03</div>
+                            <div class="step-info">
+                                <div class="step-title">STEP 3</div>
+                                <div class="step-subtitle">Parent's Information</div>
+                                <div class="step-status">Completed &#10003;</div>
+                            </div>
+                        </li>
+
+                        <li class="last-step">
+                            <div class="step-number">04</div>
+                            <div class="step-info">
+                                <div class="step-title">STEP 4</div>
+                                <div class="step-subtitle">Parent Carer's Information</div>
+                                <div class="step-status">Completed &#10003;</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <form action="" id="registrationForm">
+
+                <div class="content-area">
+                    <div class="tab-bar">
+                        <button type="reset" id="reset" onclick="resetForm()">Reset</button>
+                        <button type="button" id="next" onclick="showAlert()">Submit</button>
+                    </div>
+                    <div class="content" id="content1">
+                        <div class="title-group">
+                            <h2>STEP 1: </h2>
+                            <span class="sub-heading">Personal Information</span>
+                        </div>
+                        <p>Please follow the steps to complete your registration.</p>
+                        <div class="registration-code">
+                            <label for="code-input-1">Registration Number</label>
+                            <div class="code-input">
+                                <input id="code-input-1" type="text" maxlength="1" placeholder="0" />
+                                <input id="code-input-2" type="text" maxlength="1" placeholder="0" />
+                                <input id="code-input-3" type="text" maxlength="1" placeholder="0" />
+                                <input id="code-input-4" type="text" maxlength="1" placeholder="0" />
+                                <input id="code-input-5" type="text" maxlength="1" placeholder="0" />
+                                <input id="code-input-6" type="text" maxlength="1" placeholder="0" />
+                                <input id="code-input-7" type="text" maxlength="1" placeholder="0" />
+                                <input id="code-input-8" type="text" maxlength="1" placeholder="0" />
+                            </div>
+                        </div>
+                        <div class="quesion">
+
+                            <div class="left">
+                                <label for="name">Fullname</label>
+                                <input type="text" id="name" placeholder="Enter your full name" />
+                                <label for="birth-place">Birthplace</label>
+                                <input type="text" id="birth-place" placeholder="Enter your birthplace" />
+                                <label for="birth-date">Date of Birth</label>
+                                <input type="date" id="birth-date" placeholder="Enter your Date of birth" />
+                                <label for="gender">Gender</label>
+                                <select name="" id="gender">
+                                    <option value="">Select gender</option>
+                                    <option value="">Male</option>
+                                    <option value="">Female</option>
+                                </select>
+                                <label for="blood-type">Blood type</label>
+                                <select name="" id="blood-type">
+                                    <option value="">Select Blood Type</option>
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="AB">AB</option>
+                                    <option value="O">O</option>
+                                    <option value="Unknown">Unknown</option>
+                                </select>
+                                <label for="tribe">Tribe</label>
+                                <input type="text" id="tribe" placeholder="Enter your tribe" />
+                                <label for="status">Status</label>
+                                <select name="" id="status">
+                                    <option value="">Select Status</option>
+                                    <option value="Single">Single</option>
+                                    <option value="Married">Married</option>
+                                    <option value="Divorced">Divorced</option>
+                                    <option value="Widowed">Widowed</option>
+                                </select>
+                            </div>
+
+                            <div class="right">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="Enter your email" />
+                                <label for="telephone">Telephone number</label>
+                                <input type="tel" id="telephone" placeholder="Enter your telephone number" />
+                                <label for="mobile">Mobile number</label>
+                                <input type="tel" id="mobile" placeholder="Enter your mobile number" />
+                                <label for="religion">Religion</label>
+                                <select name="" id="religion">
+                                    <option value="">Select Religion</option>
+                                    <option value="Advent">Adventist</option>
+                                    <option value="Islam">Islam</option>
+                                    <option value="Kristen">Kristen</option>
+                                    <option value="Katolik">Katolik</option>
+                                    <option value="Hindu">Hindu</option>
+                                    <option value="Buddha">Buddha</option>
+                                    <option value="Konghucu">Konghucu</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <label for="postal-code">Postal Code</label>
+                                <input type="text" id="postal-code" placeholder="Enter your postal code" />
+                                <label for="address">Address</label>
+                                <textarea name="" id="address" cols="30" rows="5"
+                                    placeholder="Enter your address"></textarea>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="content" id="content2">
+                        <div class="title-group">
+                            <h2>STEP 2: </h2>
+                            <span class="sub-heading">School Information</span>
+                        </div>
+                        <p>Please follow the steps to complete your registration.</p>
+                        <div class="quesion">
+
+                            <div class="left">
+                                <label for="school-name">School Name</label>
+                                <input type="text" id="school-name" placeholder="Enter your school name" />
+                                <label for="program">Program</label>
+                                <select name="" id="program">
+                                    <option value="">Select Program</option>
+                                    <option value="Science">Science</option>
+                                    <option value="Arts">Arts</option>
+                                    <option value="Commerce">Commerce</option>
+                                    <option value="Engineering">Engineering</option>
+                                    <option value="Medical">Medical</option>
+                                    <option value="Law">Law</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <label for="school-telephone-number">Telephone Number</label>
+                                <input type="tel" id="school-telephone-number"
+                                    placeholder="Enter your school telephone number" />
+                            </div>
+                            <div class="right">
+                                <label for="school-postal-code">Postal Code</label>
+                                <input type="text" id="school-postal-code"
+                                    placeholder="Enter your school postal code" />
+                                <label for="school-address">Address</label>
+                                <textarea name="" id="school-address" cols="30" rows="5"
+                                    placeholder="Enter your school address"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="content" id="content3">
+                        <div class="title-group">
+                            <h2>STEP 3: </h2>
+                            <span class="sub-heading">Parent's Information</span>
+                        </div>
+                        <p>Please follow the steps to complete your registration.</p>
+                        <div class="quesion">
+                            <div class="left">
+                                <label for="father-name">Father's Name</label>
+                                <input type="text" id="father-name" placeholder="Enter your father's name" />
+                                <label for="father-mobile">Mobile Number</label>
+                                <input type="tel" id="father-mobile" placeholder="Enter your father's mobile number" />
+                                <label for="father-email">Email</label>
+                                <input type="email" id="father-email" placeholder="Enter your father's email" />
+                                <label for="father-education">Education</label>
+                                <select name="" id="father-education">
+                                    <option value="">Select Education Level</option>
+                                    <option value="Elementary School">Elementary School</option>
+                                    <option value="Junior High School">Junior High School</option>
+                                    <option value="High School">High School</option>
+                                    <option value="Bachelor's">Bachelor's</option>
+                                    <option value="Master's">Master's</option>
+                                    <option value="PhD">PhD</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <label for="father-religion">Religion</label>
+                                <select name="" id="father-religion">
+                                    <option value="">Select Religion</option>
+                                    <option value="Advent">Adventist</option>
+                                    <option value="Islam">Islam</option>
+                                    <option value="Kristen">Kristen</option>
+                                    <option value="Katolik">Katolik</option>
+                                    <option value="Hindu">Hindu</option>
+                                    <option value="Buddha">Buddha</option>
+                                    <option value="Konghucu">Konghucu</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="right">
+                                <label for="mother-name">Mother's Name</label>
+                                <input type="text" id="mother-name" placeholder="Enter your mother's name" />
+                                <label for="mother-mobile">Mobile Number</label>
+                                <input type="tel" id="mother-mobile" placeholder="Enter your mother's mobile number" />
+                                <label for="mother-email">Email</label>
+                                <input type="email" id="mother-email" placeholder="Enter your mother's email" />
+                                <label for="mother-education">Education</label>
+                                <select name="" id="mother-education">
+                                    <option value="">Select Education Level</option>
+                                    <option value="Elementary School">Elementary School</option>
+                                    <option value="Junior High School">Junior High School</option>
+                                    <option value="High School">High School</option>
+                                    <option value="Bachelor's">Bachelor's</option>
+                                    <option value="Master's">Master's</option>
+                                    <option value="PhD">PhD</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <label for="mother-religion">Religion</label>
+                                <select name="" id="mother-religion">
+                                    <option value="">Select Religion</option>
+                                    <option value="Advent">Adventist</option>
+                                    <option value="Islam">Islam</option>
+                                    <option value="Kristen">Kristen</option>
+                                    <option value="Katolik">Katolik</option>
+                                    <option value="Hindu">Hindu</option>
+                                    <option value="Buddha">Buddha</option>
+                                    <option value="Konghucu">Konghucu</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content" id="content4">
+                        <div class="title-group">
+                            <h2>STEP 4: </h2>
+                            <span class="sub-heading">Parent Carer's Information</span>
+                        </div>
+                        <p>Please follow the steps to complete your registration.</p>
+                        <div class="quesion">
+                            <div class="left">
+                                <label for="carer-name">Full Name</label>
+                                <input type="text" id="carer-name" placeholder="Enter your carer's full name" />
+                                <label for="carer-relationship">Relationship</label>
+                                <input type="text" id="carer-relationship"
+                                    placeholder="Enter your carer's relationship to you" />
+                                <label for="carer-telephone">Telephone Number</label>
+                                <input type="tel" id="carer-telephone"
+                                    placeholder="Enter your carer's telephone number" />
+                                <label for="carer-mobile">Mobile Number</label>
+                                <input type="tel" id="carer-mobile" placeholder="Enter your carer's mobile number" />
+                            </div>
+
+                            <div class="right">
+                                <label for="carer-email">Email</label>
+                                <input type="email" id="carer-email" placeholder="Enter your carer's email" />
+                                <label for="carer-education">Education</label>
+                                <select name="" id="carer-education">
+                                    <option value="">Select Education Level</option>
+                                    <option value="Elementary School">Elementary School</option>
+                                    <option value="Junior High School">Junior High School</option>
+                                    <option value="High School">High School</option>
+                                    <option value="Bachelor's">Bachelor's</option>
+                                    <option value="Master's">Master's</option>
+                                    <option value="PhD">PhD</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <label for="carer-religion">Religion</label>
+                                <select name="" id="carer-religion">
+                                    <option value="">Select Religion</option>
+                                    <option value="Advent">Adventist</option>
+                                    <option value="Islam">Islam</option>
+                                    <option value="Kristen">Kristen</option>
+                                    <option value="Katolik">Katolik</option>
+                                    <option value="Hindu">Hindu</option>
+                                    <option value="Buddha">Buddha</option>
+                                    <option value="Konghucu">Konghucu</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="agree-section">
+                            <input type="checkbox" class="agree" id="agree">
+                            <label for="agree">
+                                I hereby state that all information on this New Student Registration Form are complete
+                                and
+                                true All contents on this form I submitted to Universitas Klabat and Universitas Klabat
+                                are
+                                not oblidge to return it.
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+
+    function showAlert() {
+        Swal.fire({
+            title: 'Registration Successful',
+            text: 'Thank you for registering!',
+            icon: 'success',
+            confirmButtonText: 'OK'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = './index.html';
+            }
+        });
+    }
+
+    function test() {
+        document.getElementById("registrationForm").reset();
+    }
+
+    function resetForm() {
+        Swal.fire({
+            title: 'Reset Form',
+            text: 'Form has been reset successfully.',
+            icon: 'info',
+            confirmButtonText: 'OK',
+        })
+    }
+</script>
+
+</html>
